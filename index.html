@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="p-5">
+
+    <form class="card m-auto w-75 fw-semibold">
+        <div class="card-header">
+            <h2 class="card-title">Payment form example</h2>
+        </div>
+        <div class="card-body fs-5">
+
+            <!--FILA DEL TEXTO ERROR-->
+            <div class="row">
+                <div class="col">
+                    <p class="bg-danger bg-opacity-25 p-3 text-danger border border-danger-subtle rounded">Some fields
+                        are missing</p>
+                </div>
+            </div>
+
+            <!--FILA DE CARD, CVC, AMOUNT-->
+            <div class="row mb-4">
+                <div class="col-5">
+                    <label for="card" class="form-label">Card #</label>
+                    <input type="text" class="form-control" id="card" placeholder="1234-5678-9012-3456">
+                </div>
+                <div class="col-3">
+                    <label for="cvc" class="form-label">CVC #</label>
+                    <input type="text" class="form-control" id="cvc" placeholder="0000">
+                </div>
+                <div class="col-4">
+                    <label for="amount" class="form-label">Amount</label>
+                    $<input type="text" class="form-control" id="amount" placeholder="Amount">
+                </div>
+            </div>
+
+            <!--FILA DEL RESTO-->
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="name" class="form-label">First Name</label>
+                    <input type="text" class="form-control mb-3" id="name">
+                    <label for="city" class="form-label">City</label>
+                    <input type="text" class="form-control mb-3" id="city">
+                    <div class="col-6">
+                        <label for="" class="form-label">We accept:</label>
+                        <div class="bg-secondary d-flex p-2 rounded">
+                            <div class="col mx-">
+                                <input type="radio" class="" name="cardType" id="mastercard" value="mastercard">
+                                <label for="mastercard" class="form-check-label"><i class="fa-brands fa-cc-mastercard text-light"></i></label>
+                            </div>
+                            <div class="col">
+                                <input type="radio" class="" name="cardType" id="visa" value="visa">
+                                <label for="visa" class="form-check-label"><i class="fa-brands fa-cc-visa text-light"></i></label>
+
+                            </div>
+                            <div class="col">
+                                <input type="radio" class="" name="cardType" id="diners" value="diners">
+                                <label for="diners" class="form-check-label"><i class="fa-brands fa-cc-diners-club text-light"></i></label>
+                            </div>
+                            <div class="col">
+                                <input type="radio" class="" name="cardType" id="americanExpress" value="americanExpress">
+                                <label for="americanExpress" class="form-check-label"><i class="fa-brands fa-cc-amex text-light"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
+        <div class="card-footer d-flex justify-content-end">
+            <input type="reset" value="Cancel" class="mx-1 btn btn-secondary fw-semibold">
+            <input type="submit" value="Send" class="mx-1 btn btn-primary fw-semibold">
+        </div>
+    </form>
+
+</body>
+
+</html>
