@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body class="p-5">
@@ -41,7 +41,7 @@
                 </div>
                 <div class="col-4">
                     <label for="amount" class="form-label">Amount</label>
-                    $<input type="text" class="form-control" id="amount" placeholder="Amount">
+                    <input type="text" class="form-control" id="amount" placeholder="Amount">
                 </div>
             </div>
 
@@ -55,28 +55,52 @@
                     <div class="col-6">
                         <label for="" class="form-label">We accept:</label>
                         <div class="bg-secondary d-flex p-2 rounded">
-                            <div class="col mx-">
+                            <div class="col text-center">
                                 <input type="radio" class="" name="cardType" id="mastercard" value="mastercard">
-                                <label for="mastercard" class="form-check-label"><i class="fa-brands fa-cc-mastercard text-light"></i></label>
+                                <label for="mastercard" class="form-check-label"><i
+                                        class="fa-brands fa-cc-mastercard text-light"></i></label>
                             </div>
-                            <div class="col">
+                            <div class="col text-center">
                                 <input type="radio" class="" name="cardType" id="visa" value="visa">
-                                <label for="visa" class="form-check-label"><i class="fa-brands fa-cc-visa text-light"></i></label>
+                                <label for="visa" class="form-check-label"><i
+                                        class="fa-brands fa-cc-visa text-light"></i></label>
 
                             </div>
-                            <div class="col">
+                            <div class="col text-center">
                                 <input type="radio" class="" name="cardType" id="diners" value="diners">
-                                <label for="diners" class="form-check-label"><i class="fa-brands fa-cc-diners-club text-light"></i></label>
+                                <label for="diners" class="form-check-label"><i
+                                        class="fa-brands fa-cc-diners-club text-light"></i></label>
                             </div>
-                            <div class="col">
-                                <input type="radio" class="" name="cardType" id="americanExpress" value="americanExpress">
-                                <label for="americanExpress" class="form-check-label"><i class="fa-brands fa-cc-amex text-light"></i></label>
+                            <div class="col text-center">
+                                <input type="radio" class="" name="cardType" id="americanExpress"
+                                    value="americanExpress">
+                                <label for="americanExpress" class="form-check-label"><i
+                                        class="fa-brands fa-cc-amex text-light"></i></label>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control mb-3" id="lastName">
+                    <div class="row">
+                        <div class="col">
+                            <label for="state" class="form-label">State</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected disabled>Select a state</option>
+                                <option value="toledo">Toledo</option>
+                                <option value="albacete">Albacete</option>
+                                <option value="cuenca">Cuenca</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="postal" class="form-label">Postal Code</label>
+                            <input type="number" class="form-control mb-3" id="postal">
+                        </div>
+                    </div>
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" aria-describedby="messageHelp" rows="3"></textarea>
+                    <div id="messageHelp" class="form-text">Add any notes here.</div>
                 </div>
             </div>
         </div>
